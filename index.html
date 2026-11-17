@@ -1276,6 +1276,10 @@ a.flow-box:hover { border-color: var(--blue); }
 .ex-weak b { display: block; font-size: 13.5px; }
 .ex-weak small { color: var(--muted); font-size: 12px; }
 
+/* v12.1: LXP video / figures fit narrow screens */
+.lxp-video { display: block; width: 100%; max-width: 100%; height: auto; background: #000; border-radius: 8px; }
+.card img { max-width: 100%; height: auto; }
+
 </style>
 <style>
 /* Additions for the closed-network LMS, built on the COURSEMOS LXP tokens in app.css. */
@@ -5992,7 +5996,7 @@ I18N.register('id', {
       { version: '1.6.0', date: '2026-11-17', note: 'First Indonesian pack, translated from EN v1.6.0', keys: [] }]
   },
   strings: {
-    "app.title": "COURSEMOS LXP · Pelatihan Operasi VLM1",
+    "app.title": "COURSEMOS LXP · Pelatihan Pengoperasian VLM1",
     "app.demo": "Ini adalah prototipe demo. Semua orang, angka, dan catatan hanya contoh, bukan materi buku petunjuk lapangan yang asli. Prototipe ini berjalan tanpa internet luar.",
     "tenant.name": "Sekolah Artileri Angkatan Darat Kerajaan Thailand",
     "tenant.tag": "COURSEMOS LXP · Jaringan internal",
@@ -6442,7 +6446,7 @@ I18N.register('id', {
     "bl.examNote": "Ujian tertulis: {n} dari {total} soal kuis cek Mata pelajaran {r}",
     "bl.tr": "Status terjemahan",
     "bl.log": "Riwayat versi",
-    "bl.log.first": "Struktur awal: Pelatihan Operasi VLM1, 1 minggu (9 mata pelajaran dari pabrikan, mata pelajaran operator berjalan paralel)",
+    "bl.log.first": "Struktur awal: Pelatihan Pengoperasian VLM1, 1 minggu (9 mata pelajaran dari pabrikan, mata pelajaran operator berjalan paralel)",
     "bl.newTitle": "Pelajaran baru",
     "bl.newObj": "Tulis tujuan pembelajaran",
     "bl.newHead": "Judul",
@@ -6785,7 +6789,7 @@ I18N.register('id', {
     "cert.title": "Sertifikat Penyelesaian Pelatihan",
     "cert.name": "Nama",
     "cert.period": "Masa pelatihan",
-    "cert.stmt": "Dengan ini menyatakan bahwa orang tersebut di atas telah menyelesaikan Pelatihan Operasi VLM1.",
+    "cert.stmt": "Dengan ini menyatakan bahwa orang tersebut di atas telah menyelesaikan Pelatihan Pengoperasian VLM1.",
     "cert.sign.mfr": "Direktur pelatihan (pabrikan)",
     "cert.sign.unit": "Perwira pelatihan satuan",
     "ho.title": "Penerimaan peralatan",
@@ -6885,7 +6889,7 @@ I18N.register('id', {
     "pt.badge.cur": "Inti",
     "pt.badge.prg": "Umum",
     "pt.badge.self": "Mandiri",
-    "pt.locked": "Di prototipe ini, hanya Pelatihan Operasi VLM1 yang dapat dibuka.",
+    "pt.locked": "Di prototipe ini, hanya Pelatihan Pengoperasian VLM1 yang dapat dibuka.",
     "pt.sysnotice": "Pengumuman sistem",
     "pt.community": "Komunitas kelas",
     "pt.more": "Lainnya",
@@ -8496,7 +8500,7 @@ CONTENT.th = {
 /* ID content pack (Bahasa Indonesia) — VLM1 operator course (subjects S1–S9 = the manufacturer’s training course table). Translated from content.en.js, checked against the Korean source. Structure must match src/data.js. */
 CONTENT.id = {
   course: {
-    title: "Pelatihan Operasi VLM1",
+    title: "Pelatihan Pengoperasian VLM1",
     purpose: "Melatih operator GCS, wahana udara (AV) dan antenna tracker agar mampu mengoperasikan sistem VLM1 dengan benar dan aman, melalui pelatihan satu minggu (5 hari) di dalam ruangan dan praktik di lapangan terbang terbuka. Peserta menggunakan LMS untuk belajar lebih dahulu dan untuk mengulang materi, dan penyelesaian pelatihan serta serah terima peralatan dicatat agar tanggung jawab operasi menjadi jelas.",
     target: "12 operator VLM1 Angkatan Darat Thailand (4 operator GCS, 4 operator wahana udara (AV), 4 operator antenna tracker; tim operasi beranggotakan 3–4 orang)"
   },
